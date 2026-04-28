@@ -1,13 +1,17 @@
 import EventList from "../components/EventList";
 
 
-function EventPage() {
+function EventPage({ addToCart, cart, purchased }) {
   return (
     <div>
-      <h2>Events</h2>
+      <h1>Events</h1>
       
 
-      <EventList/>
+      <EventList 
+  addToCart={addToCart} 
+  cart={cart} 
+  purchased={purchased} 
+/>
     </div>
   );
 }

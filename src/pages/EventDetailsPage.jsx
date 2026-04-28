@@ -9,14 +9,14 @@ function EventDetailsPage() {
   const event = events.find((event) => event.id === Number(id));
 
   if (!event) {
-    return <h2>Event not found</h2>;
+    return <h1>Event not found</h1>;
   }
 
   return (
     <div className="p-4">
       <Card>
         <Card.Body>
-          <Card.Title>{event.title}</Card.Title>
+          <h1>{event.title}</h1>
 
           <Card.Text>
             <strong>Date:</strong> {event.date} <br />
